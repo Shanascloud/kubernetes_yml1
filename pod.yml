@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: jenkins
+  name: jenkinstest
   labels:
-    app: jenkins
+    app: jenkinstest
 spec:
   containers:
-    - name: jenkins
+    - name: jenkinstest
       image: jenkins/jenkins:lts
       ports:
         - containerPort: 8080

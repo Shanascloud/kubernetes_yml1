@@ -1,0 +1,22 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: site1
+  labels:
+    app: project1
+spec:
+  replicas: 2
+  selector:
+    matachlabels:
+      app: project1
+  template:
+    metadata:
+      labels:
+        app: project1
+    spec:
+      containers:
+        - name: project1
+          image: vinosmpal/vinod_evening_docker_demo:latest
+          ports:
+            - containerPort: 80

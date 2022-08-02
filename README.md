@@ -2,6 +2,7 @@
 Kubernetees Commands
 
 - aws configure
+Update all the details here like Keys
 
 
 To check the status of cluster 

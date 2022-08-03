@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: html1
-        image: vinosmpal/html_vinod
+        image: vnom1985/html_vinod
         ports:
         - containerPort: 80
         resources:

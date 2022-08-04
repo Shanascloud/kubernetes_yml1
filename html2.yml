@@ -16,7 +16,7 @@ spec:
       - name: html2
         image: vnom1985/html2_vinod
         ports:
-        - containerPort: 90
+        - containerPort: 80
         resources:
           limits:
             cpu: "200m"

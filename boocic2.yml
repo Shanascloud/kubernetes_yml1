@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: boocic2-deployment
+spec:
+  selector:
+    matchLabels:
+      app: boocic2
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: boocic2
+    spec:
+      containers:
+      - name: html1
+        image: vnom1985/boocic2
+        ports:
+        - containerPort: 80
+        resources:
+          limits:
+            cpu: "200m"

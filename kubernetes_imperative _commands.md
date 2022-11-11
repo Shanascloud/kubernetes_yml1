@@ -74,8 +74,34 @@ kubectl create -f nginx-deployment.yaml
 
 OR
 
-In k8s version 1.19+, we can specify the --replicas option to create a deployment with 4 replicas.
+# In k8s version 1.19+, we can specify the --replicas option to create a deployment with 4 replicas.
 
-# kubectl create deployment --image=nginx nginx --replicas=4 --dry-run=client -o yaml > nginx-deployment.yaml
+- kubectl create deployment --image=nginx nginx --replicas=4 --dry-run=client -o yaml > nginx-deployment.yaml
+
+
+
+
+# other imperative commands 
+
+
+- kubectl run --image=nginx nginx
+
+- kubectl create deployment --image=nginx nginx
+
+- kubectl expose  deployment nginx --port 80 
+
+- kubectl edit deployment nginx
+
+- kubectl scale  deployment nginx --replicas=5
+
+- kubectl set  image  deployment nginx nginx=nginx:1.18
+
+- kubectl create -f nginx.yaml
+
+- kubectl replace  -f nginx.yaml
+
+- kubectl delate  -f nginx.yaml
+
+
 
 

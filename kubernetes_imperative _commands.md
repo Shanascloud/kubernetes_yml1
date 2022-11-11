@@ -21,3 +21,16 @@ command below to do a dry-run and show the Yaml output and later modeify accordi
 
 # to check the record 
 - kubectl rollout history deployment web-project
+
+
+# Fix the original replica set new-replica-set to use the correct busybox image.Either delete and recreate the ReplicaSet or Update the existing ReplicaSet and then delete all PODs, so new ones with the correct image will be created.
+
+
+- kubectl edit replicaset new-replica-set
+
+
+# Scale the ReplicaSet to 5 PODs. Use command or edit the replicaset using .
+
+-kubectl scale 
+
+-kubectl edit replicaset

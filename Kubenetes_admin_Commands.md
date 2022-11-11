@@ -25,3 +25,6 @@ ps -aux | grep kube-apiserver
 - kubectl config set-context $(kuberctl config current-context) --namespace=dev 
 
 
+# We can also allocoate the resource for the each namespace as per our plan 
+
+

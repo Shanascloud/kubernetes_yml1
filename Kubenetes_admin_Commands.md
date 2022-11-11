@@ -13,3 +13,15 @@
 
 # to check the running process
 ps -aux | grep kube-apiserver
+
+
+# how to create namespace
+
+- kubectl create namespace dev
+
+
+# to Switch to different namespace 
+
+- kubectl config set-context $(kuberctl config current-context) --namespace=dev 
+
+

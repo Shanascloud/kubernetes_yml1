@@ -12,4 +12,4 @@
 - cat /etc/systemd/system/kube-apiserver.service
 
 # to check the running process
-ps -aus | grep kube-apiserver
+ps -aux | grep kube-apiserver

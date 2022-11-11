@@ -28,3 +28,8 @@ ps -aux | grep kube-apiserver
 # We can also allocoate the resource for the each namespace as per our plan 
 
 
+
+    -A, --all-namespaces=false:
+        If present, list the requested object(s) across all namespaces.
+        Namespace in current context is ignored even if specified with
+        --namespace.

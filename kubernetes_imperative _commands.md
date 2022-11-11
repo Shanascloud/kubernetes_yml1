@@ -83,6 +83,7 @@ OR
 
 # other imperative commands 
 
+# Create objects
 
 - kubectl run --image=nginx nginx
 
@@ -90,11 +91,16 @@ OR
 
 - kubectl expose  deployment nginx --port 80 
 
+# edit  objects
+
 - kubectl edit deployment nginx
 
 - kubectl scale  deployment nginx --replicas=5
 
 - kubectl set  image  deployment nginx nginx=nginx:1.18
+
+
+# yaml file
 
 - kubectl create -f nginx.yaml
 

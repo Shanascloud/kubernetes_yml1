@@ -34,3 +34,8 @@ command below to do a dry-run and show the Yaml output and later modeify accordi
 -kubectl scale 
 
 -kubectl edit replicaset
+
+Example 
+- kubectl scale rs --replicas=5 new-replica-set
+
+- kubectl get  rs 

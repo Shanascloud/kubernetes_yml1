@@ -100,7 +100,16 @@ OR
 
 - kubectl replace  -f nginx.yaml
 
-- kubectl delate  -f nginx.yaml
+- kubectl delete  -f nginx.yaml
+
+
+
+#  Declarative  commands 
+
+# this will look for changes and apply 
+
+
+- kubectl apply   -f nginx.yaml
 
 
 

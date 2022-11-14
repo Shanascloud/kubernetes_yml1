@@ -1,0 +1,38 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: jenkins1
+  name: jenkins1
+spec:
+  ports:
+  - name: jenkins1
+    port: 5678
+    protocol: TCP
+    targetPort: 8080
+    nodePort: 30083
+  selector:
+    app: jenkins1
+  type: NodePort
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: jenkins1
+  name: jenkins1
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: jenkins1
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: jenkins1
+    spec:
+      containers:
+      - image: jenkins/jenkins:lts
+        name: jenkins1
+  
